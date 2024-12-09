@@ -5,7 +5,7 @@ export default function Logo() {
     return (
         <>
             <Link href={"/"}>
-                <Image src={"/logo.png"} alt='logo' height={27} width={27} className='h-[27.5]' />
+                <Image src={"/logo.png"} alt='logo' height={27} width={134} className='relative z-1 selection:bg-inherit h-[27.5px]' />
             </Link>
             <div>Logo</div>
         </>
