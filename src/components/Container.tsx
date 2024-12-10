@@ -1,6 +1,7 @@
 import React from 'react'
 import Header from './Header'
 import FeedbackList from './FeedbackList'
+import FeedbackForm from './FeedbackForm'
 
 export default function Container() {
   return (
