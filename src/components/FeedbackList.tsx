@@ -1,4 +1,5 @@
 import React from 'react'
+import { TriangleUpIcon } from '@radix-ui/react-icons'
 
 export default function FeedbackList() {
   return (
@@ -6,7 +7,7 @@ export default function FeedbackList() {
       <ol className="feedback-list">
         <li className="feedback">
           <button>
-            {/* <TriangleUpIcon from radix ui/> */}
+            <TriangleUpIcon />
             <span>593</span>
           </button>
           <div>
