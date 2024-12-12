@@ -1,10 +1,10 @@
 import { TriangleUpIcon } from '@radix-ui/react-icons'
 import React from 'react'
 
-export default function FeedbackItem({ upVoteCount, badgeLetter, companyName, text, daysAgo }: {
-    upVoteCount: number;
+export default function FeedbackItem({ upvoteCount, badgeLetter, company, text, daysAgo }: {
+    upvoteCount: number;
     badgeLetter: string;
-    companyName: string;
+    company: string;
     text: string;
     daysAgo: number;
 }) {
@@ -12,13 +12,13 @@ export default function FeedbackItem({ upVoteCount, badgeLetter, companyName, te
         <li className="feedback">
             <button>
                 <TriangleUpIcon />
-                <span>{upVoteCount}</span>
+                <span>{upvoteCount}</span>
             </button>
             <div>
                 <p>{badgeLetter}</p>
             </div>
             <div>
-                <p>{companyName}</p>
+                <p>{company}</p>
                 <p>
                     {text}
                 </p>
