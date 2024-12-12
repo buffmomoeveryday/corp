@@ -30,10 +30,17 @@ export default function FeedbackList() {
   ]
 
   return (
-    <>
-      <ol className="feedback-list">
-        <FeedbackItem />
-      </ol>
-    </>
-  )
+    <ol className="feedback-list">
+      {feedbackItem.map((item, index) => (
+        <FeedbackItem
+          key={index}
+          upVoteCount={item.upVoteCount}
+          badgeLetter={item.badgeLetter}
+          companyName={item.companyName}
+          text={item.text}
+          daysAgo={item.daysAgo}
+        />
+      ))}
+    </ol>
+  );
 }
