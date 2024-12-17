@@ -1,5 +1,5 @@
 import { TriangleUpIcon } from '@radix-ui/react-icons'
-import React from 'react'
+import React, { useState } from 'react'
 
 export default function FeedbackItem({ upvoteCount, badgeLetter, company, text, daysAgo }: {
     upvoteCount: number;
@@ -8,8 +8,12 @@ export default function FeedbackItem({ upvoteCount, badgeLetter, company, text, 
     text: string;
     daysAgo: number;
 }) {
+
+    const [open, setOpen] = useState(false)
     return (
-        <li className="feedback">
+        <li className={`feedback  ${open ? "feedback--expand" : ""}`}
+            onClick={() => open === true ? setOpen(false) : setOpen(true)}
+        >
             <button>
                 <TriangleUpIcon />
                 <span>{upvoteCount}</span>
