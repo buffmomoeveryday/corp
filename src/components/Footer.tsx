@@ -12,7 +12,7 @@ export default function Footer() {
             <a href='https://github.com/Buffmomoeveryday'
               target='_blank'>
               {" "}
-              Phurdiki</a></p>
+              Siddhartha Khanal</a></p>
         </small>
       </footer>
     </div>
